@@ -13,6 +13,8 @@ python -m venv venv
 
 venv\Scripts\activate        # on Windows
 source venv/bin/activate     # on Linux
+
+pip install -r requirements.txt
 ````
 Провести миграции в базу данных 
 ````
@@ -39,9 +41,9 @@ MAX_CLIENT_ITEM_AMOUNT = 50     # максимальное количество 
 ````
 python manage.py create_market      # можно добавить --new для удаления удаления старых записей
 ````
-Запустить цикл с указанием количества итераций 
+Запустить цикл  
 ````
-python manage.py run 100       
+python manage.py run <количество итераций>       
 ````
 
 ## 3 Пример работы
